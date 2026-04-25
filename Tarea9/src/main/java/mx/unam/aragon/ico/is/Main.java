@@ -11,21 +11,15 @@ public class Main {
         try {
             System.out.println("Ingresa tu Peso");
             calc.setPeso(sc.nextDouble());
+            System.out.println("Ingresa tu Altura");
+            calc.setAltura(sc.nextDouble());
         } catch (Exception e) {
             System.out.println("Error, revisa tu entrada");
 
-            try {
-                System.out.println("Ingresa tu Altura");
-                calc.setAltura(sc.nextDouble());
-            } catch (Exception e1) {
-                System.out.println("Error, revisa tu entrada");
-
-
-                calc.CalculadoraIMC();
-
-                System.out.println("Su IMC es: " + calc.getImc());
-
-            }
         }
+
+            calc.CalculadoraIMC();
+
+        System.out.println("Su IMC es: " + calc.getImc());
     }
 }
