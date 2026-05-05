@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AppMVCVersion1" />
         <module name="Tarea9" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AppMVCVersion1" target="26" />
       <module name="Tarea12" target="26" />
     </bytecodeTargetLevel>
   </component>
