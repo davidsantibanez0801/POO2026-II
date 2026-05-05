@@ -20,7 +20,7 @@ public class ControladorPrincipal implements MouseListener {
         //this.view.getLblSalida().setText("Hola " + this.view.getTxtNombre().getText());
         if (e.getSource() == this.view.getBtnSaludar()) {
             this.view.getLblSalida().setText("Hola " + this.view.getTxtNombre().getText());
-            System.out.println("Hola desde NEZAYORK");
+            System.out.println("Hola desde TEPITO");
         }
 
         if (e.getSource() == this.view.getLbNombre()) {

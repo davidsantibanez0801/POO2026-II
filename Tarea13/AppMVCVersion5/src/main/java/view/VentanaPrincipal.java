@@ -14,35 +14,27 @@ public class VentanaPrincipal extends JFrame {
 
 
     public VentanaPrincipal() {
-        super("Tarea12");
+        super("Tarea13");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(2, 1));
 
-        //PANELES
         panel1 = new JPanel();
-        panel1.setBackground(new Color(252, 95, 95));
+        panel1.setBackground(new Color(245, 140, 225));
         panel2 = new JPanel();
-        panel2.setBackground(new Color(83, 105, 223));
+        panel2.setBackground(new Color(140, 245, 241));
 
-        //COMPONENTES
-        lbNombre = new JLabel("Dame Tu Nombre:");
+        lbNombre = new JLabel("Nombre:");
         txtNombre = new JTextField(20);
         btnSaludar = new JButton("Saludar");
         lblSalida = new JLabel("...");
 
-        //COMPS. PANEL 1
         panel1.add(lbNombre);
         panel1.add(txtNombre);
         panel1.add(btnSaludar);
         panel1.add(lblSalida);
 
-        //AGG. PANEL 1Y2 AL FRAME
         this.getContentPane().add(panel1, 0 );
         this.getContentPane().add(panel2, 1 );
-
-
-
-
         setSize(800, 600);
         setVisible(true);
 

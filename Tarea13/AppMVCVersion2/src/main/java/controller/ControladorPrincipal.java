@@ -12,21 +12,18 @@ public class ControladorPrincipal implements MouseListener {
         this.view = vista;
         this.view.getBtnSaludar().addMouseListener(this);
         this.view.getLbNombre().addMouseListener(this);
-
     }
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        //this.view.getLblSalida().setText("Hola " + this.view.getTxtNombre().getText());
+
         if (e.getSource() == this.view.getBtnSaludar()) {
             this.view.getLblSalida().setText("Hola " + this.view.getTxtNombre().getText());
             System.out.println("Hola desde NEZAYORK");
         }
-
         if (e.getSource() == this.view.getLbNombre()) {
             System.out.println("Desde etiqueta 1");
         }
-
     }
 
     @Override
